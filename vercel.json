@@ -1,5 +1,31 @@
 {
     "version": 2,
+    "rewrites": [
+        {
+            "source": "/api/auth/:action",
+            "destination": "/api/auth.js"
+        },
+        {
+            "source": "/api/companies/:action",
+            "destination": "/api/companies.js"
+        },
+        {
+            "source": "/api/requests/:action",
+            "destination": "/api/requests.js"
+        },
+        {
+            "source": "/api/clock/:action",
+            "destination": "/api/clock.js"
+        },
+        {
+            "source": "/api/staff/:action",
+            "destination": "/api/staff.js"
+        },
+        {
+            "source": "/api/salary/:action",
+            "destination": "/api/salary.js"
+        }
+    ],
     "headers": [
         {
             "source": "/api/(.*)",
@@ -22,6 +48,5 @@
                 }
             ]
         }
-    ],
-    "rewrites": []
+    ]
 }
