@@ -45,6 +45,6 @@ module.exports = async function handler(req, res) {
         });
     } catch (err) {
         console.error('Signup error:', err);
-        return res.status(500).json({ error: 'Server error' });
+        return res.status(500).json({ error: 'Server error', debug: err.message || String(err) });
     }
 };
